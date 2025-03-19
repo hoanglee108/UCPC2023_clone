@@ -133,9 +133,10 @@
 }
 
 .countdown {
-    position: relative; /* Đảm bảo giữ không gian */
+    position: relative;
+    /* Đảm bảo giữ không gian */
     width: 100%;
-    height: 400px; 
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +220,7 @@
 .clock::after {
     content: attr(data-text);
     position: absolute;
-    top: -10px; /* Đưa chữ lệch lên trên vòng tròn */
+    top: -10px;
     right: -20px;
     transform: translateX(-50%);
     font-size: 16px;
@@ -233,6 +234,7 @@
     font-size: 40px;
     font-weight: 100;
 }
+
 .countdown_clock-hour {
     display: flex;
     justify-content: center;
@@ -240,6 +242,7 @@
     font-size: 40px;
     font-weight: 100;
 }
+
 .countdown_clock-minute {
     display: flex;
     justify-content: center;
@@ -247,6 +250,7 @@
     font-size: 40px;
     font-weight: 100;
 }
+
 .countdown_clock-second {
     display: flex;
     justify-content: center;
@@ -257,7 +261,7 @@
 
 .prize {
     width: 100%;
-    height: 565px;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +270,7 @@
     font-weight: bold;
     background-image: url("../img/Prize.png");
     background-size: cover;
-    z-index: 0; /* Đảm bảo không bị đè */
+    z-index: 0;
 }
 
 .prize::before {
@@ -277,13 +281,130 @@
     width: 100%;
     height: 100%;
     background-image: url("../img/IMG_4819.png");
-    /* Thay bằng ảnh của bạn */
     background-size: cover;
     background-position: center;
-    /* filter: blur(10px); */
     z-index: -2;
 }
 
 .timeline {
     background-color: var(--bg-color);
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.timeline_text {
+    position: relative;
+    font-size: 4.4rem;
+    font-weight: 200;
+    left: 200px;
+    top: 50px;
+    color: var(--primary-color);
+}
+
+.timeline_tree {
+    position: relative;
+    width: 1500px;
+    height: 50px;
+    left: 400px;
+    border: 3px solid #85D2D5;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    background: none;
+    top: 100px;
+}
+
+.timeline_tree-line {
+    position: relative;
+    width: 3px;
+    height: 50px;
+    background-color: #85D2D5;
+}
+
+.line_1 {
+    left: 880px;
+    top: 50px;
+}
+
+.line_2 {
+    left: 1400px;
+}
+
+.timeline_tree-point {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: var(--white-color);
+    border-color: #71c9ce;
+    border-style:  solid;
+    border-radius: 50%;
+    border-width: 5px;
+    top: 50px;
+    margin: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.point_1 {
+    position: relative;
+    top: -30px;
+    left: 347px;
+}
+.point_2 {
+    position: relative;
+    top: -110px;
+    left: 827px;
+}
+.point_3 {
+    position: relative;
+    top: -190px;
+    left: 1347px;
+}
+.point_4 {
+    position: relative;
+    top: -270px;
+    left: 1842px;
+}
+
+.block_4 {
+    position: relative;
+    width: 150px;
+    opacity: 0.4;
+    top: -440px;
+    left: -20px;
+}
+
+.block_5 {
+    position: relative;
+    width: 120px;
+    opacity: 0.4;
+    left: -50px;
+}
+
+.block_6 {
+    position: relative;
+    width: 180px;
+    opacity: 0.4;
+    top: -380px;
+    left: 500px;
+}
+
+.block_7 {
+    position: relative;
+    width: 300px;
+    opacity: 0.4;
+    top: -180px;
+    left: 750px;
+}
+
+.block_8 {
+    position: relative;
+    width: 100px;
+    opacity: 0.4;
+    left: 200px;
+    bottom: -100px;
 }
