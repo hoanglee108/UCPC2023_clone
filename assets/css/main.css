@@ -270,7 +270,6 @@
     font-weight: bold;
     background-image: url("../img/Prize.png");
     background-size: cover;
-    z-index: 0;
 }
 
 .prize::before {
@@ -286,11 +285,16 @@
     z-index: -2;
 }
 
+.wrapper {
+    position: relative;
+    height: 700px;
+}
+
 .timeline {
     background-color: var(--bg-color);
     position: absolute;
     width: 100%;
-    height: 700px;
+    height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -300,9 +304,13 @@
     position: relative;
     font-size: 4.4rem;
     font-weight: 200;
-    left: 200px;
+    left: 150px;
     top: 50px;
     color: var(--primary-color);
+}
+
+.timeline_holder {
+    position: relative;
 }
 
 .timeline_tree {
@@ -310,11 +318,11 @@
     width: 1500px;
     height: 50px;
     left: 400px;
-    border: 3px solid #85D2D5;
+    border: 4px solid #85D2D5;
     border-radius: 20px 20px 0 0;
     border-bottom: none;
     background: none;
-    top: 100px;
+    top: 80px;
 }
 
 .timeline_tree-line {
@@ -326,11 +334,14 @@
 
 .line_1 {
     left: 880px;
-    top: 50px;
+    width: 4px;
+    top: 30px;
 }
 
 .line_2 {
     left: 1400px;
+    width: 4px;
+    top: -20px;
 }
 
 .timeline_tree-point {
@@ -351,30 +362,60 @@
 
 .point_1 {
     position: relative;
-    top: -30px;
+    top: -50px;
     left: 347px;
 }
 .point_2 {
     position: relative;
-    top: -110px;
+    top: -130px;
     left: 827px;
 }
 .point_3 {
     position: relative;
-    top: -190px;
+    top: -210px;
     left: 1347px;
 }
 .point_4 {
     position: relative;
-    top: -270px;
+    top: -290px;
     left: 1842px;
+}
+
+.timeline_holder-news {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 235px;
+}
+
+.timeline_tree-box {
+    height: 245px;
+    width: 330px;
+    border: 4px solid #71c9ce;
+    border-radius: 10px;
+}
+
+.box_1 {
+    position: relative;
+}
+.box_2 {
+    position: relative;
+    margin-left: 150px;
+}
+.box_3 {
+    position: relative;
+    margin-left: 190px;
+}
+.box_4 {
+    position: relative;
+    margin-left: 150px;
 }
 
 .block_4 {
     position: relative;
     width: 150px;
     opacity: 0.4;
-    top: -440px;
+    top: -780px;
     left: -20px;
 }
 
@@ -383,13 +424,14 @@
     width: 120px;
     opacity: 0.4;
     left: -50px;
+    bottom: 400px;
 }
 
 .block_6 {
     position: relative;
     width: 180px;
     opacity: 0.4;
-    top: -380px;
+    top: -730px;
     left: 500px;
 }
 
@@ -397,7 +439,7 @@
     position: relative;
     width: 300px;
     opacity: 0.4;
-    top: -180px;
+    top: -550px;
     left: 750px;
 }
 
@@ -406,5 +448,8 @@
     width: 100px;
     opacity: 0.4;
     left: 200px;
-    bottom: -100px;
+    bottom: 300px;
 }
+
+
+
