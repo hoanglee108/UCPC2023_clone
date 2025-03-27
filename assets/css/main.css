@@ -76,6 +76,7 @@
 .background {
     z-index: 0;
     width: 100%;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .introduce {
